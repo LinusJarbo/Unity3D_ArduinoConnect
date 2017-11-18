@@ -11,20 +11,21 @@ public class MainController : MonoBehaviour
 		ScanForArduino ();
 	}
 
+	//start scanning for arduino
 	public void ScanForArduino ()
 	{
 		Debug.Log ("<color=green>" + "Started scanning for arduino" + "</color>\n");
 		scanPorts.StartScan ();
 	}
 
-	//found arduino, stop scanning and start
+	//found arduino, stop scanning and start your project, or cancel scanning and continue without arduino.
 	public void StopScanningForArduino ()
 	{
 		Debug.Log ("<color=green>" + "Stopped scanning for arduino" + "</color>\n");
 		scanPorts.StopScan ();
 	}
 
-	//AutoCheck if Arduino connected
+	//callback from TalkToArduino, the arduino is connected and you may continue.
 	public void ArduinoIsConnected ()
 	{
 		Debug.Log ("<color=green>" + "Arduino is connected" + "</color>\n");
