@@ -6,7 +6,7 @@ If you put this code in projects earlier than unity 2017.1.2f1, Mac builds will 
 Mac OS version (not tested on windows)
 Connect to Arduino on usb over serial.
 
-0. Arduino .ino code included in unity project. Build to your Arduino through Arduino IDE. Tested on Arudino UNO and Arduino Nano. 
+The Arduino .ino code is included in this unity project. Build to your Arduino through Arduino IDE. Tested on Arudino UNO and Arduino Nano. 
 
 Features:
 1. Auto-connects to arduino
