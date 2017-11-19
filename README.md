@@ -1,10 +1,12 @@
 # Unity3D_ArduinoConnect
 
-This is a Unity-to-Arduino serial communication solution that works both in editor and on Mac desktop builds.
+Mac Unity to Arduino serial communication.
+
+This is a Unity-to-Arduino serial communication solution that works both in unity editor and on Mac desktop builds.
 If you put this code in projects earlier than unity 2017.1.2f1, Mac builds will not work with serial, but editor might?
 
 Mac OS version (not tested on windows)
-Connect to Arduino on usb over serial.
+Connect to Arduino on serial over usb.
 
 The Arduino .ino code is included in this unity project. Build to your Arduino through Arduino IDE. Tested on Arudino UNO and Arduino Nano. 
 
