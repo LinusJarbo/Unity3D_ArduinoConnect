@@ -8,7 +8,6 @@ public class PortData : MonoBehaviour
 	[HideInInspector]
 	public int baudrate = 57600;
 
-
 	void Awake ()
 	{
 		Current = this;

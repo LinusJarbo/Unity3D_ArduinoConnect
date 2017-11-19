@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 
-public class MainController : MonoBehaviour
+public class ArduinoConnectController : MonoBehaviour
 {
-	public static MainController Current;
+	public static ArduinoConnectController Current;
 	public ScanPorts scanPorts;
 
+	//start scanning on Start
 	void Start ()
 	{
 		Current = this;
@@ -25,7 +26,7 @@ public class MainController : MonoBehaviour
 		scanPorts.StopScan ();
 	}
 
-	//callback from TalkToArduino, the arduino is connected and you may continue.
+	//callback from TalkToArduino, the arduino is connected.
 	public void ArduinoIsConnected ()
 	{
 		Debug.Log ("<color=green>" + "Arduino is connected" + "</color>\n");

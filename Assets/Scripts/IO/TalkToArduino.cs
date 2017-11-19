@@ -17,7 +17,7 @@ public class TalkToArduino : MonoBehaviour
 
 	public void StartTalkingToArduino ()
 	{
-		MainController.Current.ArduinoIsConnected ();
+		ArduinoConnectController.Current.ArduinoIsConnected ();
 		arduinoConnect.Open (PortData.Current.USBportName);
 		InvokeRepeating ("SendSensorIndexToArduino", Frequency, Frequency);
 	}
@@ -89,8 +89,6 @@ public class TalkToArduino : MonoBehaviour
 			Debug.Log ("<color=red>" + "Data not clean" + "</color>\n");
 			result = 1024;
 		}
-
-		float val = result / 1024f;
 
 		switch (sensorReading) {
 

@@ -342,7 +342,7 @@ GameObject:
   - component: {fileID: 1017556982}
   - component: {fileID: 1017556981}
   m_Layer: 0
-  m_Name: MainController
+  m_Name: ArduinoConnectController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1017556980}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f1c543fd199c405eb91f422135583ce, type: 3}
+  m_Script: {fileID: 11500000, guid: a85a7c859be8741d29176ebab6cf315a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scanPorts: {fileID: 912671761}
